@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import logo from '../assets/final_logo.jpeg'
 
 const LINKS = [
   { href: '#intent', label: 'The Opportunity' },
@@ -24,18 +25,7 @@ export default function Navbar() {
   return (
     <nav id="nav" className={scrolled ? 's' : ''}>
       <a href="#" className="nlogo" onClick={(e) => go(e, '#hero')}>
-        <svg className="nlogo-svg" viewBox="0 0 36 36" fill="none">
-          <defs>
-            <linearGradient id="ng" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#c4a8ff" />
-              <stop offset="100%" stopColor="#7B3FF2" />
-            </linearGradient>
-          </defs>
-          <circle cx="18" cy="18" r="16" stroke="rgba(123,63,242,.3)" strokeWidth=".8" fill="none" />
-          <path d="M18 5c0 0-6 6.5-6 11.5C12 20.09 14.686 23 18 23s6-2.91 6-6.5C24 11.5 18 5 18 5z" fill="url(#ng)" />
-          <path d="M10 25.5c0 0 3 5.5 8 5.5s8-5.5 8-5.5" stroke="url(#ng)" strokeWidth="1.6" strokeLinecap="round" fill="none" />
-        </svg>
-        <span className="nlogo-txt">Cheri<span>Pic</span></span>
+        <img className="nlogo-img" src={logo} alt="CheriPic" />
       </a>
       <div className="nright">
         {LINKS.map(l => (

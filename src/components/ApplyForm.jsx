@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import Reveal from './Reveal';
 import { categories } from '../data/content';
 import { submitPartnerApplication } from '../services/apiService';
@@ -6,6 +7,12 @@ import { submitPartnerApplication } from '../services/apiService';
 export default function ApplyForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [toast, setToast] = useState(null); // { type: 'success' | 'error', message }
+
+  const showToast = (type, message) => {
+    setToast({ type, message });
+    setTimeout(() => setToast(null), 5000);
+  };
 
   const [form, setForm] = useState({
     business: '',
@@ -32,6 +39,9 @@ export default function ApplyForm() {
       ...prev,
       [key]: '',
     }));
+
+    // Editing again means starting a new application — re-enable the button.
+    if (submitted) setSubmitted(false);
   };
 
   const validateForm = () => {
@@ -101,6 +111,10 @@ export default function ApplyForm() {
       console.log('Success:', response);
 
       setSubmitted(true);
+      showToast('success', "Application received! We'll respond within 48 hours.");
+
+      // Re-enable the form so another application can be submitted.
+      setTimeout(() => setSubmitted(false), 5000);
 
       setForm({
         business: '',
@@ -115,7 +129,7 @@ export default function ApplyForm() {
       setErrors({});
     } catch (error) {
       console.error('Submission failed:', error);
-      alert('Failed to submit application. Please try again.');
+      showToast('error', 'Failed to submit application. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -123,6 +137,22 @@ export default function ApplyForm() {
 
   return (
     <section id="apply">
+      {toast &&
+        createPortal(
+          <div className={`toast toast-${toast.type}`} role="status">
+            <span className="toast-icon">{toast.type === 'success' ? '✓' : '!'}</span>
+            <span>{toast.message}</span>
+            <button
+              className="toast-close"
+              onClick={() => setToast(null)}
+              aria-label="Dismiss"
+            >
+              ×
+            </button>
+          </div>,
+          document.body
+        )}
+
       <div className="W">
         <Reveal className="form-hd">
           <span
@@ -300,13 +330,23 @@ export default function ApplyForm() {
             )}
           </div>
 
+          {/* Inline status message (always in document flow) */}
+          {toast && (
+            <div className={`fstatus fstatus-${toast.type}`} role="status">
+              <span className="fstatus-icon">
+                {toast.type === 'success' ? '✓' : '!'}
+              </span>
+              {toast.message}
+            </div>
+          )}
+
           {/* Submit Button */}
           <div className="fsubwrap">
             <button
               type="button"
               className="fsub"
               onClick={onSubmit}
-              disabled={loading || submitted}
+              disabled={loading}
             >
               {loading
                 ? 'Submitting...'

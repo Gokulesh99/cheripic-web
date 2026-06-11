@@ -1,10 +1,10 @@
 // src/services/apiService.js
 
-const API_BASE_URL = "https://your-api-url.com/api";
+const API_BASE_URL = "https://cheripic.com/partner/api/api.php";
 
 export const submitPartnerApplication = async (payload) => {
   try {
-    const response = await fetch(`${API_BASE_URL}/partner-application`, {
+    const response = await fetch(`${API_BASE_URL}?action=insertPartnerData`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

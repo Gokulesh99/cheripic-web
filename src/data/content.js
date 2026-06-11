@@ -41,14 +41,22 @@ export const whyCards = [
   },
 ];
 
+import rooftopDining from '../assets/Rooftop Dining.PNG'
+import yachtExperiences from '../assets/Yacht Experiences.PNG'
+import luxuryHotels from '../assets/Luxury Hotels.PNG'
+import spaRecovery from '../assets/Spa & Recovery.PNG'
+import weekendGetaways from '../assets/Weekend Getaways.PNG'
+import coffeeExperiences from '../assets/Coffee Experiences.PNG'
+import culturalEvents from '../assets/Cultural Events.PNG'
+
 export const experiences = [
-  { scene: 'es1', badge: 'Featured', cat: 'Fine Dining', name: 'Rooftop Dining', desc: 'Candlelit evenings above the skyline. Reserved exclusively for CheriPic members seeking connection.' },
-  { scene: 'es2', badge: 'Luxury', cat: 'Marine', name: 'Yacht Experiences', desc: 'Private charters and sunset sailings on open water — moments built for meaningful connection.' },
-  { scene: 'es3', badge: 'Premium', cat: 'Hospitality', name: 'Luxury Hotels', desc: 'Curated accommodations for members who invest in extraordinary moments over ordinary stays.' },
-  { scene: 'es4', badge: 'Wellness', cat: 'Wellness', name: 'Spa & Recovery', desc: 'Restorative rituals for members who invest as deeply in themselves as in their relationships.' },
-  { scene: 'es5', badge: 'Escape', cat: 'Travel', name: 'Weekend Getaways', desc: 'Curated short-form escapes that turn ordinary weekends into defining shared memories.' },
-  { scene: 'es6', badge: 'Social', cat: 'Social', name: 'Coffee Experiences', desc: 'Intentional first connections in spaces that were designed for real conversation, not content.' },
-  { scene: 'es7', badge: 'Culture', cat: 'Art & Culture', name: 'Cultural Events', desc: 'Galleries, performances, and cultural moments shared with people who genuinely appreciate depth.' },
+  { scene: 'es1', img: rooftopDining, badge: 'Featured', cat: 'Fine Dining', name: 'Rooftop Dining', desc: 'Candlelit evenings above the skyline. Reserved exclusively for CheriPic members seeking connection.' },
+  { scene: 'es2', img: yachtExperiences, badge: 'Luxury', cat: 'Marine', name: 'Yacht Experiences', desc: 'Private charters and sunset sailings on open water — moments built for meaningful connection.' },
+  { scene: 'es3', img: luxuryHotels, badge: 'Premium', cat: 'Hospitality', name: 'Luxury Hotels', desc: 'Curated accommodations for members who invest in extraordinary moments over ordinary stays.' },
+  { scene: 'es4', img: spaRecovery, badge: 'Wellness', cat: 'Wellness', name: 'Spa & Recovery', desc: 'Restorative rituals for members who invest as deeply in themselves as in their relationships.' },
+  { scene: 'es5', img: weekendGetaways, badge: 'Escape', cat: 'Travel', name: 'Weekend Getaways', desc: 'Curated short-form escapes that turn ordinary weekends into defining shared memories.' },
+  { scene: 'es6', img: coffeeExperiences, badge: 'Social', cat: 'Social', name: 'Coffee Experiences', desc: 'Intentional first connections in spaces that were designed for real conversation, not content.' },
+  { scene: 'es7', img: culturalEvents, badge: 'Culture', cat: 'Art & Culture', name: 'Cultural Events', desc: 'Galleries, performances, and cultural moments shared with people who genuinely appreciate depth.' },
 ]
 
 export const benefitsProvide = [

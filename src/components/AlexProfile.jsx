@@ -5,7 +5,7 @@ export default function AlexProfile() {
   return (
     <section id="alex">
       <div className="W">
-        <Reveal className="alex-card">
+        {/* <Reveal className="alex-card">
           <div className="alex-photo">
             <div className="alex-photo-art" />
             <div className="alex-photo-figure" />
@@ -16,7 +16,7 @@ export default function AlexProfile() {
           </div>
           <div className="alex-body">
             <div className="alex-name">Alex</div>
-            <div className="alex-role">Premium Member · Dubai</div>
+            <div className="alex-role">Premium Member</div>
             <div className="alex-stats">
               <div className="astat"><div className="astat-l">Age Range</div><div className="astat-v">28 — 45</div></div>
               <div className="astat"><div className="astat-l">Status</div><div className="astat-v">Verified ✓</div></div>
@@ -30,7 +30,7 @@ export default function AlexProfile() {
               </div>
             </div>
           </div>
-        </Reveal>
+        </Reveal> */}
 
         <Reveal className="alex-txt" delay={0.2}>
           <span className="slbl">Your New Customer</span>
