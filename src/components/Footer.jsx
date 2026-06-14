@@ -9,6 +9,14 @@ export default function Footer() {
           <span className="fl-dot">·</span>
           <a href="#legal:disclaimer">Disclaimer</a>
         </nav>
+        <a
+          className="fl-social"
+          href="https://cheripic.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit CheriPic
+        </a>
       </div>
       <div className="fcopy">© 2026 Cave Xpert Inc. All rights reserved.</div>
     </footer>
