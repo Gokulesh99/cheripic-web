@@ -45,8 +45,8 @@ async function run() {
     const out = path.join(optDir, 'logo.webp')
     const srcSize = (await stat(src)).size
     await sharp(src)
-      .resize({ height: 280, fit: 'inside', withoutEnlargement: true })
-      .webp({ quality: 90, effort: 6 })
+      .resize({ height: 200, fit: 'inside', withoutEnlargement: true })
+      .webp({ quality: 88, effort: 6 })
       .toFile(out)
     const outSize = (await stat(out)).size
     before += srcSize; after += outSize
