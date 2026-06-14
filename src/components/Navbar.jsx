@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import logo from '../assets/final_logo.jpeg'
+import logo from '../assets/optimized/logo.webp'
 
 const LINKS = [
   { href: '#intent', label: 'The Opportunity' },
@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav id="nav" className={scrolled ? 's' : ''}>
       <a href="#" className="nlogo" onClick={(e) => go(e, '#hero')}>
-        <img className="nlogo-img" src={logo} alt="CheriPic" />
+        <img className="nlogo-img" src={logo} alt="CheriPic" width="105" height="70" decoding="async" />
       </a>
       <div className="nright">
         {LINKS.map(l => (

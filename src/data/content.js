@@ -41,13 +41,13 @@ export const whyCards = [
   },
 ];
 
-import rooftopDining from '../assets/Rooftop Dining.PNG'
-import yachtExperiences from '../assets/Yacht Experiences.PNG'
-import luxuryHotels from '../assets/Luxury Hotels.PNG'
-import spaRecovery from '../assets/Spa & Recovery.PNG'
-import weekendGetaways from '../assets/Weekend Getaways.PNG'
-import coffeeExperiences from '../assets/Coffee Experiences.PNG'
-import culturalEvents from '../assets/Cultural Events.PNG'
+import rooftopDining from '../assets/optimized/Rooftop Dining.webp'
+import yachtExperiences from '../assets/optimized/Yacht Experiences.webp'
+import luxuryHotels from '../assets/optimized/Luxury Hotels.webp'
+import spaRecovery from '../assets/optimized/Spa & Recovery.webp'
+import weekendGetaways from '../assets/optimized/Weekend Getaways.webp'
+import coffeeExperiences from '../assets/optimized/Coffee Experiences.webp'
+import culturalEvents from '../assets/optimized/Cultural Events.webp'
 
 export const experiences = [
   { scene: 'es1', img: rooftopDining, badge: 'Featured', cat: 'Fine Dining', name: 'Rooftop Dining', desc: 'Candlelit evenings above the skyline. Reserved exclusively for CheriPic members seeking connection.' },

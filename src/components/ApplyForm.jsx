@@ -186,9 +186,10 @@ export default function ApplyForm() {
         <Reveal className="fg" as="div">
           {/* Business Name */}
           <div className="ff">
-            <label>Business Name *</label>
+            <label htmlFor="ff-business">Business Name *</label>
 
             <input
+              id="ff-business"
               type="text"
               placeholder="Your business name"
               value={form.business}
@@ -205,9 +206,10 @@ export default function ApplyForm() {
 
           {/* Contact Name */}
           <div className="ff">
-            <label>Contact Name *</label>
+            <label htmlFor="ff-contact">Contact Name *</label>
 
             <input
+              id="ff-contact"
               type="text"
               placeholder="Your full name"
               value={form.contact}
@@ -224,9 +226,10 @@ export default function ApplyForm() {
 
           {/* Email */}
           <div className="ff">
-            <label>Email Address *</label>
+            <label htmlFor="ff-email">Email Address *</label>
 
             <input
+              id="ff-email"
               type="email"
               placeholder="you@yourbusiness.com"
               value={form.email}
@@ -243,9 +246,10 @@ export default function ApplyForm() {
 
           {/* Website */}
           <div className="ff">
-            <label>Website</label>
+            <label htmlFor="ff-website">Website</label>
 
             <input
+              id="ff-website"
               type="url"
               placeholder="https://yourbusiness.com"
               value={form.website}
@@ -262,9 +266,10 @@ export default function ApplyForm() {
 
           {/* Category */}
           <div className="ff">
-            <label>Business Category *</label>
+            <label htmlFor="ff-category">Business Category *</label>
 
             <select
+              id="ff-category"
               value={form.category}
               onChange={update('category')}
               className={errors.category ? 'error' : ''}
@@ -292,9 +297,10 @@ export default function ApplyForm() {
 
           {/* City */}
           <div className="ff">
-            <label>City *</label>
+            <label htmlFor="ff-city">City *</label>
 
             <input
+              id="ff-city"
               type="text"
               placeholder="Dubai, London, New York..."
               value={form.city}
@@ -311,11 +317,12 @@ export default function ApplyForm() {
 
           {/* About */}
           <div className="ff full">
-            <label>
+            <label htmlFor="ff-about">
               Tell Us About Your Experience *
             </label>
 
             <textarea
+              id="ff-about"
               placeholder="Describe what makes your experience unique and why it aligns with the CheriPic audience..."
               value={form.about}
               onChange={update('about')}

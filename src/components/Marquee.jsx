@@ -6,7 +6,7 @@ const ITEMS = [
 export default function Marquee() {
   const full = [...ITEMS, ...ITEMS]
   return (
-    <div className="marquee-strip">
+    <div className="marquee-strip" aria-hidden="true">
       <div className="mtrack">
         {full.map((t, i) => (
           <span className="mitem" key={i}>{t} <b>·</b></span>

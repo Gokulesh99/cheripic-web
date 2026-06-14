@@ -28,7 +28,7 @@ export default function Experiences() {
             {experiences.map((e) => (
               <div className="ecard" key={e.name}>
                 <div className={`ecard-scene ${e.scene}`}>
-                  {e.img && <img className="ecard-img" src={e.img} alt={e.name} loading="lazy" />}
+                  {e.img && <img className="ecard-img" src={e.img} alt={e.name} loading="lazy" decoding="async" width="800" height="1040" />}
                   <div className="ecard-lines">{sceneLines[e.scene]}</div>
                 </div>
                 <div className="ecard-ov" />

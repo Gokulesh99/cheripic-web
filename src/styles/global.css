@@ -44,9 +44,9 @@ body.hs #CURR{width:58px;height:58px;border-color:rgba(157,108,255,.5)}
 #nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:28px 64px;display:flex;align-items:center;justify-content:space-between;transition:padding .5s,background .5s,border-color .5s;border-bottom:1px solid transparent}
 #nav.s{padding:16px 64px;background:rgba(8,4,26,0.92);backdrop-filter:blur(28px) saturate(1.8);border-color:rgba(123,63,242,.18)}
 .nlogo{display:flex;align-items:center;text-decoration:none}
-.nlogo-img{height:48px;width:auto;display:block;object-fit:contain}
+.nlogo-img{height:70px;width:auto;display:block;object-fit:contain}
 .nright{display:flex;align-items:center;gap:36px}
-.nright a{color:rgba(192,192,208,.65);text-decoration:none;font-size:12px;letter-spacing:.08em;transition:color .3s;cursor:none}
+.nright a{color:rgba(192,192,208,.78);text-decoration:none;font-size:12px;letter-spacing:.08em;transition:color .3s;cursor:none}
 .nright a:hover{color:var(--w)}
 .nav-cta{border:1px solid var(--bg)!important;color:var(--g)!important;padding:11px 28px;font-size:11px!important;letter-spacing:.16em!important;text-transform:uppercase;background:var(--g4)!important;transition:all .35s!important;cursor:none!important}
 .nav-cta:hover{background:var(--g)!important;color:var(--ink)!important;border-color:var(--g)!important}
@@ -106,14 +106,14 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:300;line-height:1.0;letter
 .hb:last-child{border:none}
 .hb-n{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;line-height:1;margin-bottom:5px}
 .hb-n .ac{color:var(--g)}
-.hb-l{font-size:8px;letter-spacing:.24em;text-transform:uppercase;color:rgba(192,192,208,.45)}
+.hb-l{font-size:8px;letter-spacing:.24em;text-transform:uppercase;color:rgba(192,192,208,.72)}
 .h-scroll{position:absolute;bottom:88px;left:50%;transform:translateX(-50%);z-index:5;display:flex;flex-direction:column;align-items:center;gap:10px;animation:riseIn 1s 1.3s ease both}
-.h-scroll span{font-size:8px;letter-spacing:.26em;text-transform:uppercase;color:rgba(192,192,208,.35)}
+.h-scroll span{font-size:8px;letter-spacing:.26em;text-transform:uppercase;color:rgba(192,192,208,.72)}
 .h-scroll-line{width:1px;height:52px;position:relative;overflow:hidden}
 .h-scroll-line::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent,var(--g),transparent);animation:scrollDrop 2.2s ease-in-out infinite}
 @keyframes scrollDrop{0%{transform:translateY(-100%)}100%{transform:translateY(100%)}}
 .h-disc{display:none;flex-direction:column;align-items:center;gap:10px;margin:-16px 0 32px;animation:riseIn 1s .85s ease both}
-.h-disc span{font-size:8px;letter-spacing:.26em;text-transform:uppercase;color:rgba(192,192,208,.35)}
+.h-disc span{font-size:8px;letter-spacing:.26em;text-transform:uppercase;color:rgba(192,192,208,.72)}
 .h-disc .h-scroll-line{height:36px}
 
 section{position:relative;z-index:1}
@@ -233,7 +233,7 @@ section::before{content:'';position:absolute;inset:0;pointer-events:none;backgro
 .ecard-badge{position:absolute;top:18px;right:18px;background:rgba(8,4,26,.75);backdrop-filter:blur(14px);border:1px solid var(--bg);padding:6px 14px;font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--g);opacity:0;transform:translateY(-6px);transition:all .4s}
 .ecard:hover .ecard-badge{opacity:1;transform:translateY(0)}
 .exp-controls{display:flex;align-items:center;gap:16px;margin-top:20px;justify-content:flex-end}
-.exp-controls span{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(192,192,208,.3)}
+.exp-controls span{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(192,192,208,.72)}
 .earr{width:44px;height:44px;border:1px solid rgba(123,63,242,.2);display:flex;align-items:center;justify-content:center;color:var(--gr);cursor:none;transition:all .3s;background:transparent}
 .earr:hover{border-color:var(--g);color:var(--g);background:rgba(216,181,106,.05)}
 
@@ -296,7 +296,7 @@ section::before{content:'';position:absolute;inset:0;pointer-events:none;backgro
 .ff label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(192,192,208,.5)}
 .ff input,.ff select,.ff textarea{background:linear-gradient(160deg,var(--ink3),var(--ink2));border:1px solid rgba(123,63,242,.18);color:var(--w);padding:18px 22px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:300;outline:none;transition:border-color .35s,background .35s;-webkit-appearance:none;cursor:none}
 .ff input:focus,.ff select:focus,.ff textarea:focus{border-color:var(--pu2);background:linear-gradient(160deg,rgba(18,8,42,.98),rgba(14,6,34,.98))}
-.ff input::placeholder,.ff textarea::placeholder{color:rgba(192,192,208,.2)}
+.ff input::placeholder,.ff textarea::placeholder{color:rgba(192,192,208,.5)}
 .ff select option{background:var(--ink2)}
 .ff textarea{resize:vertical;min-height:140px;line-height:1.7}
 .fsubwrap{grid-column:span 2;margin-top:8px}
