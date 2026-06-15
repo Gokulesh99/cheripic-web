@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"require\\('sharp'\\);console.log\\('sharp-ok'\\)\")",
+      "Bash(magick identify *)",
+      "Bash(fc-list)",
+      "Bash(npm run *)",
+      "Bash(git checkout *)",
+      "Bash(python3 -c ' *)",
+      "Bash(git rm *)"
+    ],
+    "additionalDirectories": [
+      "/tmp",
+      "/private/tmp"
+    ]
+  }
+}
